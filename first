@@ -1,0 +1,31 @@
+### Calculadora ###
+
+def suma(a, b):
+    return a + b
+def resta(a, b):
+    return a - b
+def division(a, b):
+    return a / b
+def multiplicacion(a, b):
+    return a * b
+
+ 
+num1 = float(input("Ingresa un número: "))
+operador = input("Ingresa el operador (+, -, *, /): ")
+num2 = float(input("Ingresa el segundo número: "))
+
+if operador == '+':
+    resultado = suma(num1, num2)
+if operador == '-':
+    resultado = resta(num1, num2)
+if operador == '*':
+    resultado = multiplicacion(num1, num2)
+if operador == '/':
+    resultado = division(num1, num2)
+
+if operador in ('+', '-', '*', '/'):
+    print(f"El resultado es: {resultado}")
+else:
+    print("Operador no válido. Por favor, ingresa un operador válido.")
+
+
