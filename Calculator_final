@@ -1,0 +1,47 @@
+### Calculadora con varios operadores y con "=" como break y resultado
+
+# Segundo intento calculadora de 3 numeros y 2 operadores
+
+Numero1 = input("Ingrese un numero ")
+Signo1 = input("Ingrese operacion ")
+Numero2 = input("Ingrese segundo Numero ")
+Signo2 = input("Ingrese signo o = ")
+
+
+if Signo2 == "=":
+    Numero3 = ""  
+else:
+    Numero3 = input("Ingrese Numero ")
+
+
+Numero1 = float(Numero1)
+Numero2 = float(Numero2)
+
+if Signo1 == "+":
+    Resultado_1 = Numero1 + Numero2
+elif Signo1 == "-":
+    Resultado_1 = Numero1 - Numero2
+elif Signo1 == "*":
+    Resultado_1 = Numero1 * Numero2
+elif Signo1 == "/":
+    Resultado_1 = Numero1 / Numero2
+else:
+    print("Signo no valido intente + - * /")
+
+if Signo2 == "+":
+    Resultado_2 = Resultado_1 + float(Numero3)
+elif Signo2 == "-":
+    Resultado_2 = Resultado_1 - float(Numero3)
+elif Signo2 == "*":
+    Resultado_2 = Resultado_1 * float(Numero3)
+elif Signo2 == "/":
+    Resultado_2 = Resultado_1 / float(Numero3)
+elif Signo2 == "=":
+    Resultado_2 = Resultado_1
+    
+else:
+    print("Segundo signo no valido intente + - * /")
+
+print(Resultado_2)
+
+
